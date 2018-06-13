@@ -38,6 +38,11 @@ namespace InvoiceOCR
             //ibInvoice.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
-
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Close and dispose form
+            this.Close();
+            this.Dispose();
+        }
     }
 }
