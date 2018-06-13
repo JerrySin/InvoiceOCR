@@ -17,7 +17,7 @@ namespace InvoiceOCR
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void BaseForm_Load(object sender, EventArgs e)
         {
 
         }
