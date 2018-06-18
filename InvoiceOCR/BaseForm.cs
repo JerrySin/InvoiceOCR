@@ -44,5 +44,11 @@ namespace InvoiceOCR
             this.Close();
             this.Dispose();
         }
+
+        private void btnAddTemplate_Click(object sender, EventArgs e)
+        {
+            AddTemplateForm atf = new AddTemplateForm();
+            atf.ShowDialog(this);
+        }
     }
 }

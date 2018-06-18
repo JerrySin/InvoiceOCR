@@ -40,6 +40,7 @@
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddTemplate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip.SuspendLayout();
@@ -47,6 +48,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnAddTemplate);
             this.groupBox1.Controls.Add(this.lblChooseTemplate);
             this.groupBox1.Controls.Add(this.cbChooseTemplate);
             this.groupBox1.Controls.Add(this.btnLoadImage);
@@ -119,7 +121,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1774, 42);
+            this.menuStrip.Size = new System.Drawing.Size(1774, 40);
             this.menuStrip.TabIndex = 8;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -128,13 +130,13 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.closeToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 38);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 36);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(172, 38);
             this.closeToolStripMenuItem.Text = "&Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -143,14 +145,24 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 38);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(194, 38);
             this.aboutToolStripMenuItem.Text = "&About...";
+            // 
+            // btnAddTemplate
+            // 
+            this.btnAddTemplate.Location = new System.Drawing.Point(34, 330);
+            this.btnAddTemplate.Name = "btnAddTemplate";
+            this.btnAddTemplate.Size = new System.Drawing.Size(250, 62);
+            this.btnAddTemplate.TabIndex = 4;
+            this.btnAddTemplate.Text = "Add Template (&A)";
+            this.btnAddTemplate.UseVisualStyleBackColor = true;
+            this.btnAddTemplate.Click += new System.EventHandler(this.btnAddTemplate_Click);
             // 
             // BaseForm
             // 
@@ -163,6 +175,7 @@
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "BaseForm";
+            this.ShowIcon = false;
             this.Text = "Invoice OCR";
             this.Load += new System.EventHandler(this.BaseForm_Load);
             this.groupBox1.ResumeLayout(false);
@@ -189,6 +202,7 @@
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.Button btnAddTemplate;
     }
 }
 

@@ -48,6 +48,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTemplateForm.Designer.cs">
+      <DependentUpon>AddTemplateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +62,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddTemplateForm.resx">
+      <DependentUpon>AddTemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
